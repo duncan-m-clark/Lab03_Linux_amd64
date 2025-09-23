@@ -1,2 +1,6 @@
 libsmalls.so
 LowLevelSoftwareLab.pdf
+*.o
+*.odump
+*.sodump
+*.s

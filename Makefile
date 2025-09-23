@@ -12,7 +12,7 @@
 	gcc -shared -o $@ $^
 
 %.sodump : %.so
-	objdump -htsdr -Mintel $^ > $@
+	objdump -htsdRr -Mintel $^ > $@
 
 smallLib.so : struct.o array.o linkedlist.o tree.o if.o ifelse.o switch.o while.o for.o
 	gcc -shared -o $@ $^
@@ -24,7 +24,7 @@ primitive : primitive_exe.o
 	gcc -o $@ $^
 
 primitive.edump : primitive
-	objdump -htsd -Mintel $^ > $@
+	objdump -htsdRr -Mintel $^ > $@
 
 clean:
 	-rm *.s
