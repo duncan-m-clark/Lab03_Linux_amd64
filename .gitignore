@@ -4,3 +4,5 @@ LowLevelSoftwareLab.pdf
 *.odump
 *.sodump
 *.s
+*.so
+*.uxf
